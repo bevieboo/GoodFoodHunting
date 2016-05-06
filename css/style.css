@@ -1,0 +1,37 @@
+.search {
+  background-color: pink;
+  display: flex;
+  margin: 10px 20px;
+}
+
+.search input {
+  width: 80%;
+}
+
+.search button {
+  width: 20%;
+}
+
+.list {
+  background-color: linen;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.image {
+  width: 25%;
+  background-color: lightgreen;
+}
+
+.desc {
+  width: 50%;
+  background-color: lightblue;
+}
+
+.like {
+  width: 25%;
+  background-color: plum;
+}

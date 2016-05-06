@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="search">
+        <input type="text">
+        <button>Search</button>
+      </div>
+
+      <header class='back'>Back...</header>
+
+      <div class="list"></div>
+
+    </div>
+
+    <script id="dishes-template" type='text/x-handlebars-template'>
+      <div class="item" data-dish-id="{{ id }}">
+
+        <div class="image">
+          <img src="{{ image_url }}">
+        </div>
+
+        <div class="desc">
+          <h2>{{ name }}</h2>
+        </div>
+
+        <div class="like">
+          <h2>Likes</h2>
+          <span class="right likes">{{ like_count }}</span>
+        </div>
+
+      </div>
+    </script>
+
+
+    <script id="show-dish-template" type='text/x-handlebars-template'>
+
+      <div class="dish-card" data-dish-id="{{ id }}">
+        <div>
+          <img src="{{ image_url }}" width="30%">
+        </div>
+
+        <h2>{{ name }}</h2>
+      </div>
+
+    </script>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
+
+<!-- <div>
+<img src="http://www.shutterstock.com/blog/wp-content/uploads/sites/5/2016/02/fashionpastry.jpg" alt="">
+</div>
+
+<h2>Waffles</h2> -->
